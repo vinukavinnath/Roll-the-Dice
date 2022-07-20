@@ -27,7 +27,7 @@ class Body extends StatefulWidget {
 
 class _BodyState extends State<Body> {
   int ldice = 1;
-  int rdice=4;
+  int rdice = 4;
   // const Body({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class _BodyState extends State<Body> {
                 onPressed: () {
                   setState(
                     () {
-                      ldice = (Random().nextInt(6))+1;
+                      ldice = (Random().nextInt(6)) + 1;
                       print('Left dice= $ldice');
                     },
                   );
@@ -57,7 +57,7 @@ class _BodyState extends State<Body> {
                 child: Image.asset('images/dice$rdice.png'),
                 onPressed: () {
                   setState(() {
-                    rdice=(Random().nextInt(6))+1;
+                    rdice = (Random().nextInt(6)) + 1;
                     print('Right dice= $rdice');
                   });
                 },
